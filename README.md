@@ -93,6 +93,63 @@ Returns detailed information about the resource usage on the remote server.
 }
 ```
 
+### Respose on Windows environment
+```json
+{
+    "LogicalDisks":  {
+                         "DriveLetter":  "C:",
+                         "VolumeName":  "OS",
+                         "TotalSizeGB":  951.05,
+                         "FreeSpaceGB":  100.56,
+                         "UsedSpaceGB":  850.49
+                     },
+    "PhysicalDisks":  [
+                          {
+                              "DiskNumber":  "0",
+                              "DriveLetter":  "C",
+                              "VolumeName":  "OS",
+                              "TotalSizeGB":  951.05,
+                              "FreeSpaceGB":  100.56,
+                              "UsedSpaceGB":  850.49
+                          },
+                          {
+                              "DiskNumber":  "0",
+                              "DriveLetter":  null,
+                              "VolumeName":  "DELLSUPPORT",
+                              "TotalSizeGB":  1.46,
+                              "FreeSpaceGB":  0.44,
+                              "UsedSpaceGB":  1.02
+                          },
+                          {
+                              "DiskNumber":  "0",
+                              "DriveLetter":  null,
+                              "VolumeName":  "WINRETOOLS",
+                              "TotalSizeGB":  0.97,
+                              "FreeSpaceGB":  0.19,
+                              "UsedSpaceGB":  0.78
+                          }
+                      ],
+    "Memory":  {
+                   "TotalMemoryGB":  31.69,
+                   "FreeMemoryGB":  6.58,
+                   "UsedMemoryGB":  25.11
+               },
+    "CPU":  {
+                "Name":  "13th Gen Intel(R) Core(TM) i7-1360P",
+                "LoadPercentage":  23,
+                "NumberOfCores":  12,
+                "NumberOfLogicalProcessors":  16
+            },
+    "OS":  {
+               "Caption":  "Microsoft Windows 11 Pro",
+               "Version":  "10.0.22631",
+               "BuildNumber":  "22631",
+               "LastBootUpTime":  "20240530195326.500000+600"
+           }
+}
+
+
+```
 ## Setup and Installation
 
 ### Prerequisites
