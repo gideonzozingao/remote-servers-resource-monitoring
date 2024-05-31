@@ -1,5 +1,5 @@
 {
-  "name": "y",
+  "name": "remote-servers-resource-monitoring",
   "version": "1.0.0",
   "description": "",
   "main": "serve.js",
@@ -9,7 +9,7 @@
     "deploy": "pm2 start server.js --name=resource-usage-check",
     "down": "pm2 stop resource-usage-check"
   },
-  "author": "Gideon Zozingao",
+  "author": "gideonzozingao",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
