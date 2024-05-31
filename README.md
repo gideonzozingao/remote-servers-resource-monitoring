@@ -32,25 +32,63 @@ The Remote Servers Resource Monitoring tool aims to provide a comprehensive solu
 #### Description
 Returns detailed information about the resource usage on the remote server.
 
-#### Response
+#### Response on Linux and WSL
 ```json
 {
-  "cpu": {
-    "usage": "percentage"
+  "Disk": [
+    {
+      "Filesystem": "none",
+      "Type": "tmpfs",
+      "Size": "7.8G",
+      "Used": "4.0K",
+      "Available": "7.8G",
+      "Use%": "1%",
+      "Mounted": "/mnt/wsl"
+    },
+    {
+      "Filesystem": "none",
+      "Type": "9p",
+      "Size": "952G",
+      "Used": "851G",
+      "Available": "101G",
+      "Use%": "90%",
+      "Mounted": "/usr/lib/wsl/drivers"
+    },
+    {
+      "Filesystem": "/dev/sdc",
+      "Type": "ext4",
+      "Size": "251G",
+      "Used": "62G",
+      "Available": "177G",
+      "Use%": "26%",
+      "Mounted": "/"
+    },
+    {
+      "Filesystem": "none",
+      "Type": "tmpfs",
+      "Size": "7.8G",
+      "Used": "88K",
+      "Available": "7.8G",
+      "Use%": "1%",
+      "Mounted": "/mnt/wslg"
+    },
+    ....
+  ],
+  "Memory": {
+    "Total": "15Gi",
+    "Used": "6.3Gi",
+    "Free": "2.0Gi"
   },
-  "memory": {
-    "total": "total_memory_in_bytes",
-    "used": "used_memory_in_bytes",
-    "free": "free_memory_in_bytes"
+  "CPU": {
+    "Name": "13th Gen Intel(R) Core(TM) i7-1360P",
+    "Cores": "16",
+    "Load": "0"
   },
-  "disk": {
-    "total": "total_disk_space_in_bytes",
-    "used": "used_disk_space_in_bytes",
-    "free": "free_disk_space_in_bytes"
-  },
-  "network": {
-    "sent": "bytes_sent",
-    "received": "bytes_received"
+  "OS": {
+    "Name": "Linux",
+    "Distro": "Ubuntu 20.04.6 LTS",
+    "Version": "5.15.133.1-microsoft-standard-WSL2",
+    "LastBoot": "2024-05-31 19:13"
   }
 }
 ```
@@ -69,7 +107,7 @@ Returns detailed information about the resource usage on the remote server.
     git clone https://github.com/gideonzozingao/remote-servers-resource-monitoring.git
     cd remote-servers-resource-monitoring
     ```
-    
+
 2. **Install dependencies**:
     ```bash
     npm install
