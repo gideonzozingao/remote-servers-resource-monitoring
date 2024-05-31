@@ -66,10 +66,10 @@ Returns detailed information about the resource usage on the remote server.
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-repo/remote-servers-resource-monitoring.git
+    git clone https://github.com/gideonzozingao/remote-servers-resource-monitoring.git
     cd remote-servers-resource-monitoring
     ```
-
+    
 2. **Install dependencies**:
     ```bash
     npm install
@@ -121,8 +121,8 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 For any questions or support, please contact:
 
-- Email: support@example.com
-- GitHub Issues: [Repository Issues](https://github.com/your-repo/remote-servers-resource-monitoring/issues)
+- Email: gideongzozingao@gmail.com
+- GitHub Issues: [Repository Issues](https://github.com/gideonzozingao/remote-servers-resource-monitoring/issues)
 
 ---
 
