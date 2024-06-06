@@ -156,6 +156,8 @@ Returns detailed information about the resource usage on the remote server.
 - Node.js installed on your machine
 - npm (Node package manager)
 - pm2 (node process manager)
+- Powershell (for Windows)
+- Bash (for Linux)
 - SSH access to the remote servers
   
 
