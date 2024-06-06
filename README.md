@@ -155,7 +155,9 @@ Returns detailed information about the resource usage on the remote server.
 ### Prerequisites
 - Node.js installed on your machine
 - npm (Node package manager)
+- pm2 (node process manager)
 - SSH access to the remote servers
+  
 
 ### Installation Steps
 
@@ -176,7 +178,8 @@ Returns detailed information about the resource usage on the remote server.
 
 4. **Run the server**:
     ```bash
-    npm start
+    npm install -g pm2
+    npm run deploy
     ```
 
 5. **Access the API**:
